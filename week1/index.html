@@ -1,6 +1,6 @@
 <html>
   <head>
-    <!-- Load TensorFlow -->
+    <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
@@ -8,13 +8,13 @@
   </head>
   <body>
     <div id="console"></div>
-    <!-- Add a test image -->
+    <!-- Add an image that we will use to test -->
     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-    <button id="class-a">Add hand front</button>
-    <button id="class-b">Add closed hand</button>
-    <button id="class-c">Add hand back</button>
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
 
-    <!-- Load index.js -->
+    <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>
 </html>
