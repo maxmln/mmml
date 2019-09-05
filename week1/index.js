@@ -43,9 +43,14 @@ async function app() {
   };
 
   // When clicking a button, add an example for that class.
-  document.getElementById('class-a').addEventListener('click', () => addExample(0));
-  document.getElementById('class-b').addEventListener('click', () => addExample(1));
-  document.getElementById('class-c').addEventListener('click', () => addExample(2));
+  document.getElementById('class-a').addEventListener('click', () => addExample(1));
+  document.getElementById('class-b').addEventListener('click', () => addExample(2));
+  document.getElementById('class-c').addEventListener('click', () => addExample(3));
+
+  // Nothing at first
+  for (var i = 0; i < 10; i++) {
+    addExample(0);
+  }
 
   while (true) {
     if (classifier.getNumClasses() > 0) {
