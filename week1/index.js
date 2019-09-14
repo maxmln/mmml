@@ -48,7 +48,7 @@ async function app() {
   document.getElementById('class-c').addEventListener('click', () => addExample(3));
 
   // Nothing at first
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 30; i++) {
     addExample(0);
   }
 
